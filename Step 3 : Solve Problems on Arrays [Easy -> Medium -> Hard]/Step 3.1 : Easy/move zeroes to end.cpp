@@ -16,3 +16,22 @@ vector<int> moveZeros(int n, vector<int> a) {
     }
     return a;
 }
+
+
+// 2nd approach
+
+ int i=0;
+        int j=0;
+
+        while(j<n){
+            if(a[j]==0){
+                j++;
+            }
+            else{
+                swap(a[i],a[j]);
+                i++;
+                j++;
+
+            }
+        }
+        return a;
